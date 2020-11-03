@@ -1,0 +1,40 @@
+package ro.fastrackit.classroom;
+
+
+public class Factorial {
+    public static void main(String[] args){
+
+      System.out.println( factorial(6));
+
+    }
+    public static int factorial(int n){
+        if (n==1){
+            System.out.println("factorial(" + n + ") = 1");
+            return 1;
+        } else {
+            System.out.println("factorial(" + n + ") = " + n +"* factorial("+(n-1) + ")");
+            return n * factorial(n-1);
+        }
+    }
+     }
+
+
+//other example(trying with loop)
+
+
+
+package ro.fastrackit.classroom;
+
+public class FactorialLoop {
+
+    public static void main(String[] args){
+
+        int n = 1;
+
+        while(n>0){
+            System.out.println(n);
+            n=n*(n-1);
+
+        }
+    }
+}
